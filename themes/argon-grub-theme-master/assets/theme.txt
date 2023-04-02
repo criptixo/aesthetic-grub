@@ -1,0 +1,43 @@
+# GRUB2 gfxmenu Argon theme
+# Designed for any resolution (specific values filled in by script)
+
+# Global properties
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "{console_font_name_template}"
+terminal-left: "0%"
+terminal-top: "0%"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Styling for the boot menu
++ boot_menu {
+  left = 25%
+  top = 30%
+  width = 50%
+  height = 50%
+  item_font = "{font_name_template}"
+  item_color = "{font_colour_template}"
+  selected_item_color = "{selected_font_colour_template}"
+  icon_width = {icon_size_template}
+  icon_height = {icon_size_template}
+  item_icon_space = {item_icon_space_template}
+  item_height = {item_height_template}
+  item_padding = {item_padding_template}
+  item_spacing = {item_spacing_template}
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Styling for a boot countdown
++ label {
+  top = 80%
+  left = 35%
+  width = 30%
+  align = "center"
+  id = "__timeout__"
+  text = "Booting in %d seconds"
+  color = "{font_colour_template}"
+  font = "{font_name_template}"
+}

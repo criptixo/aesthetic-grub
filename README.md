@@ -1,1 +1,1 @@
-# aesthetic-grub-themes
+# aesthetic-grub
